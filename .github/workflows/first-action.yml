@@ -1,1 +1,16 @@
-name: 
+name: print something
+
+on: workflow_dispatch
+
+jobs: 
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print-hi
+        run: echo "Hello World"
+      - name: print-more
+        run: |
+          echo "Print more stuff"
+          echo "Print another line"
+      - name: print-buy
+        run: echo "Done! Bye!!!"
